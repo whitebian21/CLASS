@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASSIGNMENT.HTML</title>
+</head>
+<body>
+    <!--ASSIGNMENT-->
+<!--What tags can be parent or chained to other tags and what are those tags that can't go together? -->
+
+<!--Tags that can go together-->
+
+<!--1.Headings with Inline Formatting tags -->
+<!--Tags: <h1>-<h6> with <b>, <strong>, <i>, <em>, <u>, <mark>, <small>, <span>-->
+
+<h1><strong><u>WELCOME</u></strong></h1>
+<h2><b><em>WELCOME TO MR.SOFT</em></b></h2>
+<h3><strong>LEARN <mark>MORE</mark> KNOWLEDGE</strong></h3>
+
+<!--2.Paragraph with formatting tags-->
+
+<p>Life is <i>very important</i> and <b>must</b> be valued</p>
+
+<!--Why the tags can go together:
+1. The <p> tag contains text. 
+2. The <i> italicizes   
+3. The <b> tag bolds. This means that formatting tags can go inside paragraphs.  -->
+
+    <!--More examples
+Tags: <p> with <b>, <i>, <em>, <strong>, <mark>, <small>, <sub>, <sup>, <code>, <span>-->
+
+<p>Life is <em>short</em>, use <mark>time</mark> wisely.</p>
+
+<!--<p> allows only phrasing (inline) content. All these tags are valid inside <p>-->
+
+<!--3. Links inside Paragraphs-->
+
+<p>Legacy <a href="basictags.html">Home page</a> limited</p>
+
+<!--Why the tags can go together:
+1. The <p> tag contains text.
+2. The <a> tag (anchor) creates link for linking different web pages.-->
+
+<!--4.Links With Inline Elements-->
+<!--Tags: <a> with <b>, <span>, <i>, <img>, <mark>-->
+<a href="ADVICETOPEERS.HTML"><span>Click <b>here</b></span></a>
+
+<br>
+<br>
+<a href="ADVICETOPEERS.HTML"><img src="html practical.jfif" alt="Example"></a>
+<!--<a> can wrap text and images. Valid as long as no other <a> is inside-->
+<!--What happens when <a> wraps <img>? Instead of clicking text like: Click Here, You can click the image itself, and it will take you to another page. -->
+
+<!--5.Quote Tags-->
+<!--Tags: <blockquote> with <p>, <cite>-->
+<blockquote><p>Some of the authors</p><cite>"Things Fall Apart" by Chinua Achebe</cite></blockquote>
+<blockquote><cite>"Half of a Yellow Sun" by Chimamanda Ngozi Adichie</cite></blockquote>
+<!--<blockquote> holds quoted content. Can contain paragraphs and citations.-->
+
+
+<!--6.Div and Section as Containers-->
+<!--Tags: <div>, <section> with almost all the tags-->
+<section>
+    <div>
+        <h2>LEARN EVERYDAY</h2>
+        <P>We learn new things everyday</P>
+    </div>
+</section>
+<!--These are block containers. They can contain most elements-->
+
+    <br>
+<section>
+    <div>
+        <h2>CONTROL</h2>
+        <p>Things to pay attention to. </p>
+    </div>
+</section>
+<!--These are block containers. They contain most elements-->
+
+<!--6. Images inside containers-->
+<!--Tags: <img> inside <div>, <p>, <section>, <a>-->
+
+<p><img src="IMAGE21.jfif" alt="example"></p>
+<!--<img> is inline. Can go inside most containers.-->
+
+<!--TAGS THAT CANNOT GO TOGETHER-->
+<!--1. Block Elements inside <p>-->
+<!--Wrong Tags: <p> with <div>, <section>, <ul>, <ol>, <h1>-<h6>, <blockquote>-->
+
+<p><div>Wrong</div></p>
+
+<!--WHY?
+<p> only allows inline elements. Block elements break it.-->
+
+<!--2. <ul> or <ol> Inside <p>-->
+<p>
+    <ul><li>item</li></ul>
+</p>
+<!--Lists are block elements. Not allowed inside <p>.-->
+
+<!--3. Headings inside <p>-->
+<p><h1>Wrong</h1></p>
+
+<!--Headings are block elements. Cannot go inside <p>-->
+
+<!--4.<div> inside Inline Tags-->
+<span><div>WRONG</div></span>
+<!--<span> is inline. <div> is block. Invalid nesting-->
+
+<br>
+
+<!--5. Section Inside Span-->
+<span><section>WRONG COMBINATION OF TAGS</section></span>
+<!--Block element inside Inline-->
+
+<!--DIFFERENCE BETWEEN BLOCK ELEMENTS AND INLINE ELEMENTS-->
+<!-- . A block element is a tag that: Starts on a new line, Take Up the full width of the page, Can Contain other elements(block+inline) -->
+<!-- Examples: <div>, <section>, <p>, <h1>-<h6>, <ul>, <ol>, <li>, <blockquote>, <pre>, <details> -->
+<!--Each paragraph appears in a new line. {Key Idea- Block elements are used to structure the page}-->
+<!--An inline element is a tag that: Does NOT start on a new line, Only takes up as much space as needed, Usually used to style or affect small parts of text.-->
+<!--Examples: 1.<b>, <strong>. 2. <i> <em>. 3.<u>. 4.<mark> 5.<small> 6.<span> 7.<a> 8.<img> 9.<sub>, <sup>, 10.<code>. 11.<abbr>, <cite> 12.<br>-->
+</body>
+</html>

@@ -1,0 +1,19 @@
+.Intro{
+    background-color: orange;
+}
+#Locate{
+    background-color: yellow;
+}
+.Intro{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+}
+#Locate{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-size: 50px;
+}
+body{
+    background-color: brown;
+}
+
+

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Measurement</title>
+    <style>
+    *{
+            box-sizing: border-box;
+            padding: 0 ;
+            margin: 0;
+        }
+ html{
+            font-size: 16px; /*Root element font-size*/ 
+        }
+#Fixed{
+    background:rgb(12, 254,173)
+    /* width: 200px; 
+    height: 150px; */
+
+    /* width: 20pt;
+    height: 50pt; */
+
+    /* width: 2in;
+    height: 3in; */
+
+    /* width: 5cm;
+    height: 7cm; */
+}
+div{
+    background: rgb(202, 254,12);
+    width: 50%; /*50% of the parent element's width */ 
+    border: 10px solid black; /*10 pixels of border*/
+    font-size: 20px;
+    margin-top: 2em; /*2 times the font-size of the (this) element*/ 
+    padding: 2rem; /* 2 times the root font-size*/
+    height: 50vh; /* Half of the viewport height*/
+}
+section{
+    background: rgb(128, 213, 115);
+    width: 50vmin;/* 50% of the smaller dimension of the viewport*/
+    margin: calc(0.5em + 5%);
+}
+main{
+    background-color: coral;
+    width: 50vmax; /* 50% of the larger dimension of the viewport*/
+}
+aside{
+    background-color: dimgrey;
+    /* width: 50vw;*/ /* 50% of the viewport width*/
+    width: 250px;
+    /*height: 150px*/
+    min-height: 150px;
+    max-height: 400px;
+    /* overflow: auto;*/
+}
+/*#par1{
+    background-color: rgb(142, 13, 104);
+    min: height 100px;
+}*/
+
+    </style>
+</head>
+<body>
+    <div id="Fixed">FIXED</div>
+    <div id="div1"> DIV 1</div>
+
+    <section>MY SECTION</section>
+
+    <main> my main</main>
+
+    <aside>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt perspiciatis accusamus officiis nam! Ullam ipsam ab voluptatem, nobis perspiciatis suscipit voluptate omnis repellendus ipsum totam saepe facilis unde ducimus sapiente maiores mollitia quos officiis iusto ad aperiam! Quasi esse officia doloribus facilis voluptatibus eveniet similique, rerum quia molestias, ipsa recusandae laborum labore quam vel sed dolores, repudiandae explicabo libero ducimus. Accusamus excepturi deserunt sunt nisi repellendus ad, dicta consectetur unde impedit delectus deleniti, minus fuga quidem quisquam, aliquid voluptatum? Magnam harum quas atque, illo est inventore sed esse porro sit cupiditate eum expedita corporis ducimus molestias vero optio iure dolores?
+
+       
+    </aside>
+   
+    <!-- inventoresedesseporrositcupiditateeumexpeditacorporis -->
+
+    <p id="par1"> </p>
+
+</body>
+</html>

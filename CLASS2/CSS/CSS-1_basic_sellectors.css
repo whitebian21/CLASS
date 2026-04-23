@@ -1,0 +1,130 @@
+/* CSS-1_basic_sellectors.css */
+/* Universal Selector
+Selectors all elements
+*/
+*{
+    margin: 0;
+    /* padding: 0; */
+    box-sizing: border-box;
+    /* color: blue;
+    background-color: bisque; */
+}
+/* Element Type Selector::
+o  Selects all elements of a specific tag name 
+*/
+/* h1{
+   color:red;
+}
+h3{
+ color:green;
+}
+
+p{
+  background-color; blueviolet;
+  margin; 3px;
+}*/
+/* ID Selector:
+o  Selects a single element with a specific ID attribute.
+*/
+#sons{
+    color: rgba(23, 121, 78, 0.83);
+}
+/* #sons1 {
+color: rgb(8, 201, 195);
+} */
+#sons {
+    color: rgb(201, 98, 8)
+}
+/* Class Selector::
+o  Selects all elements with a specific class attribute.
+ */
+.sons{
+    color: rgb(23, 221, 82);
+}
+/* Attribute Selector::
+o  Selects elements based on the presence or value of their attributes.
+*/
+
+[type] {    
+    border: 1px solid #ccc;
+    background-color: rgba(137, 198, 63, 0.399)
+}
+[type="email"] {
+    border: 1px solid #ccc;
+    background-color: blue;
+}
+[placeholder="email"] {
+    border: 1px solid #ccc;
+    background-color: red;
+}
+/* Pseudo-classes: */
+/* :hover {
+    color: rgb(23, 224, 37)
+} */
+
+p:hover{
+    color:red
+}
+#sons:hover{
+    color: rgb(23, 224, 37);
+}
+.sons:hover{
+    color: rgb(134, 173, 137);
+}
+/* :active{
+    background-color: chocolate;
+} */ 
+ /* .sons:active{
+     background-color: chocolate;
+ } */
+  /* :is(h1, h2, h3){
+     color: rgb(0, 255, 145);
+  } */
+   /* h1, h2, h3 {
+   color: rgb(0, 225, 145);
+   } */
+/* 
+:has(>.bro){
+background: red;
+}*/
+
+/* div:has(.bro){
+   background: red;
+}*/
+
+/* :where(h1, h2, h3){
+   color: rgb(0, 255, 145);
+} */
+
+/* Pseudo-elements: */
+
+/* .quote::before {
+    content: "\201C";
+} 
+
+.quote::after {
+ content: "\201D";
+}*/
+
+/* p::first-line {
+   font-weight: bold;
+   color: rgb (255, 0, 170);
+} */
+
+ /* p::first-letter {
+    font-size: 200%;
+    font-weight: bold;
+    color: red;
+ } */
+
+ /* selection {
+   background-color: yellow;
+   color: black;
+ } 
+ 
+ input::placeholder {
+    color: #9e0606;
+    font-style: italic;
+ }
+
+ */
