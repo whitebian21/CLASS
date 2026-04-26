@@ -1,0 +1,55 @@
+/* CSS-3_Combinators_sellectors.css */
+/* h1 {
+    background-color: brown;
+} */
+
+/* div{
+    background-color: chartreuse;
+} */
+
+
+.father{
+    background-color: brown;
+}
+
+/*
+• Descendant combinator (whitespace):
+o Selects all elements that are descendants of a specified element.
+*/
+
+/* .father *{
+    background-color: red;
+} */
+
+.father div h1{
+    background-color: rgb(86, 33, 248);
+    color: green;
+}
+
+.father div div h1{
+    background-color: rgb(244, 169, 18);
+}
+
+/* .father h1{
+    background-color: red;
+}  */
+
+/* Combinators define the relationship between different selectors */
+/* Combinators are more powerful than Id */
+/* Being more specific has more authority for combinators */
+
+.father{
+    background-color: red;
+}
+.father div h1{
+    background-color: blue;
+    font-size: 60px;
+}
+
+.father div div h1{
+    background-color: brown;   
+}
+
+.father div div h1 p{
+    background-color: paleturquoise;
+}

@@ -1,3 +1,37 @@
+/* CSS, or Cascading Style Sheets, is a style sheet language used to describe the
+presentation of a document written in HTML or XML (including XML dialects such as SVG or XHTML).
+
+CSS describes how elements should be rendered on screen, on paper, in speech,
+or on other media. It allows web developers to control the layout, appearance,
+and style of multiple web pages all at once.
+
+
+selector {
+  property: value;
+}
+
+OR
+
+
+selector {
+    property: value;
+    property: value;
+    ...
+}
+
+
+• Selector: Targets HTML elements to apply styles.
+• Property: The style attribute you want to modify.
+• Value: The value assigned to the property.
+*/
+
+
+/* External styling */
+h3 {
+  color: rgb(119, 2, 183);
+  text-align: center;
+}
+
 h3{
 color: purple;
 font-size: 50px;

@@ -1,0 +1,26 @@
+/* Grouping Selectors */
+
+group Id, class element and attribute selectors
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    background-color: brown;
+}
+
+
+#sons, .quote, [type]{
+color: gold;
+font-size: 30px;
+background-color: aqua;
+}
+/* compound selectors */
+/* the element must contain */
+/* an id should not be repeated in the same page, it should have a unique id
+
+No two elements in the same page should have one id, it should have a unique id*/
+h3.sons{
+    font-size: xx-large;
+    color: rgb(217, 226, 43);
+
+}
