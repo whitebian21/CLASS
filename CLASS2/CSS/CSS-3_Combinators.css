@@ -1,16 +1,21 @@
 /* CSS-3_Combinators_sellectors.css */
 /* h1 {
     background-color: brown;
-} */
+}  */
 
-/* div{
+ /* div{
     background-color: chartreuse;
 } */
 
 
-.father{
-    background-color: brown;
-}
+/* .father{
+    background-color: red;
+} */
+
+
+/* .father div{
+  background-color: orange;
+} */
 
 /*
 • Descendant combinator (whitespace):
@@ -21,35 +26,243 @@ o Selects all elements that are descendants of a specified element.
     background-color: red;
 } */
 
-.father div h1{
+/* .father div h1{
     background-color: rgb(86, 33, 248);
     color: green;
-}
+} */
 
-.father div div h1{
+/* .father div div h1{
     background-color: rgb(244, 169, 18);
-}
+} */
 
 /* .father h1{
     background-color: red;
 }  */
 
+/* Child Combinator (>):
+ o Selects all elements that is a direct child of a specified element.
+*/
+/* Class can outsmart elements.
+
+Id overrules combinators. 
+*/
+
+p{
+    background-color: rgb(18, 182, 223);
+    color: blue;
+}
+
+.father>p{
+    background-color:rgb(18, 182, 223);
+    color: blue; ;
+}
+
+/* .father>.sons{
+    background-color:rgb(223, 18, 151) ;
+    color: blue
+} */
+
+.father>#son{
+    background-color:rgb(223, 134, 18) ;
+    color: blue
+}
+
+/* #son{
+    color: green;
+} */
+
+/* .son{
+    color: green;
+} */
+
+
+/* b{
+    background-color: blueviolet;
+    color: white;
+} */
+/* 
+.father>div>h1{
+    background-color: rgb(49, 18, 223);
+    color: rgb(85, 255, 0);
+} */
+
+/* .father>div>div>h1{
+    background-color: rgb(196, 223, 18);
+    color: blue;
+} */
+
+/* .father>h1{
+color: rgb(42, 165, 71);
+} */
+
+
+/* *{
+    background-color: brown;
+    color: chartreuse;
+} */
+
+/* .father>div>*{
+    background-color: brown;
+    color: chartreuse;
+} */
+
+/* 
+.father>div>div, h1, h2{
+    background-color: brown;
+    color: chartreuse;
+} */
+
+
+/* Adjacent sibling  combinator (+): 
+o  Selects an element that is immediately preceded by a specified element.
+*/
+
+/* .sibling2{
+    display: none;
+} */
+
+/* .father+* {
+    background-color: red;
+    display: block;
+} */
+
+/* .father+div {
+    background-color: red;
+    display: block;
+} */
+
+/* .sibling8{
+    display: none;
+} */
+
+
+/* .father+p {
+    background-color: red;
+    display: block;
+} */
+
+/* .sibling7+p {
+    background-color: red;
+    display: block;
+} */
+
+/* 
+General sibling combinator (~):
+•	Selects all elements that are siblings of a specified element and share the same parent.
+*/
+
+/* .father p~*{
+    background-color: red;
+} */
+
+.father~*{
+    background-color: rgb(95, 42, 165);
+}
+
+
+/* ATTRIBUTE SELLECTOR */
+
+/* [class="sons"]{
+    background-color: blue;
+} */
+
+/* [class]{
+    background-color: blue;
+} */
+
+/* [type="text"]{
+    background-color: blueviolet;
+}  */
+
+
+/* PSEUDO CLASS SELLECTORS */
+/* :hover{
+    background-color: brown;
+} */
+
+
+/* .father>div:hover{
+    background-color: brown;
+} */
+
+
+.father>div:active{
+    background-color: rgb(42, 165, 58);
+}
+
+
+.father~div:nth-child(even){
+    background-color: blue;
+} 
+
+.father~div:nth-child(odd){
+    background-color: green;
+}
+
+/* .father div h1, .father div h2{
+    background-color: blue;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Combinators define the relationship between different selectors */
 /* Combinators are more powerful than Id */
 /* Being more specific has more authority for combinators */
 
-.father{
+/* .father{
     background-color: red;
-}
-.father div h1{
+} */
+/* .father div h1{
     background-color: blue;
     font-size: 60px;
-}
+} */
 
-.father div div h1{
+/* .father div div h1{
     background-color: brown;   
+} */
+
+/* .father div div h1 p{
+    background-color: paleturquoise;
+} */
+
+
+ /* Child Combinator (>) */
+ div > div {
+    color: darkblue;
+ }
+
+ /*Adjacent Sibling Combinator (+)*/
+ /* Selects the very next element after another element */
+
+.father + .sons{
+    color: violet;
 }
 
-.father div div h1 p{
-    background-color: paleturquoise;
+/* General Sibling Combinator (~) */
+/* Selects all siblings after an element. */
+
+.father ~ div {
+    background-color: violet;
+}
+/* Combining Combinators (Very Important) */
+/* You can mix them together to be more specific */
+ 
+div > div h1 {
+  color: orange;
 }

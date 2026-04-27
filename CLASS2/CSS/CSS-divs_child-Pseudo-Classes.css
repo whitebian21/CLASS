@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* #withDivs{
+    background-color: blue;
+} */
+
+/* selects any first child element */
+/* #withDivs *:first-child{
+    background-color: #12db55;
+} */
+
+/* p will be selected if its the first child */
+/* #withDivs p:first-child{
+    background-color: #db12d1;
+} */
+
+/* #withDivs div:first-child{
+    background-color: #12db55;
+} */
+
+
+/* sellects any last child element */
+/* #withDivs *:last-child{
+    background-color: #12db55;
+} */
+
+/* #withDivs div:last-child{
+    background-color: #12db55;
+} */
+/* 
+#withDivs p:last-child{
+    background-color:  #db12d1;
+} */
+
+/* #withDivs *:nth-child(n) {
+    background-color: #12db55;
+} */
+
+/* #withDivs *:nth-child(4) {
+    background-color: #12db55;
+} */
+
+/* #withDivs div:nth-child(even){
+    background-color: aqua;
+} */
+
+/* #withDivs *:nth-child(even){
+    background-color: aqua;
+} */
+
+/* #withDivs div:nth-child(odd){
+    background-color: rgb(36, 80, 240);
+}  */
+
+/* #withDivs *:nth-child(odd){
+    background-color: rgb(36, 80, 240);
+}  */
+
+
+
+/* #withDivs div:nth-child(3n){
+    background-color: rgb(10, 183, 202);
+} */
+
+/* #withDivs *:nth-child(4n){
+    background-color: rgb(10, 183, 202);
+} */
+
+/* starts with the first element followed by any nth term element */
+/* #withDivs>div:nth-child(4n+1){
+    background-color: rgb(10, 183, 202);
+} */
+
+
+/* starts with the second element followed by any nth term element */
+/* #withDivs>div:nth-child(4n+2){
+    background-color: rgb(10, 183, 202);
+} */
+
+
+/* #withDivs div:hover{
+    background-color: rgb(18, 211, 79);
+}  */
+
+
+/* #withDivs *:hover{
+    background-color: rgb(18, 211, 79);
+}  */
