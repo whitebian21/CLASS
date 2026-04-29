@@ -1,0 +1,86 @@
+/* borderImages.css */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.dim{
+    height: 300px;
+    color: red;
+    padding: 10px;
+}
+
+/* CSS borders are a fundamental aspect of web design, 
+providing a way to outline elements and create visual 
+separation between them.  */
+
+/* width, style, color */
+
+/* border style
+o  none
+o  solid
+o  dashed
+o  dotted
+o  double
+o  groove
+o  ridge
+o  inset
+o  outset
+*/
+
+.element{
+    border: 20px solid red;
+    /* border: 20px outset red; */
+
+    /* border-top: 2px solid red; */
+    /* border-left: 2px solid rgb(51, 255,0); */
+    /* border-right: 2px solid rgb(98, 0, 255); */
+    /* border-bottom: 2px solid rgb(242, 0, 255); */
+
+    /* border-width: top right bottom left; */
+    /* border-width: 20px 12px 8px 4px; */
+    /* border-style: dashed; */
+    /* border-color: blue red green black; */
+    /* border-color: blue red */
+    /* border-color: blue red green; */
+
+    
+    
+}
+
+ /* border: 40px solid red;   */
+    /* border-image-source: url(images/BOW_TIE.jpg); */
+    /* border-radius: 10px;  */
+  
+
+.element{
+    /* #main */
+    /* border-image-source: url(images/BOW_TIE.jpg);
+    border-image-width: 10px;
+    border-image-slice: 30; */
+    /* #others */
+    border-image-outset: 5px;
+    border-image-repeat:round;
+    /* border-images-repeat:repeat; */
+    /* border-image-repeat:space; */
+    /* cursor:crosshair       */
+}
+
+
+/* border: 2px solid black; */
+/* border-image-repeat:space; */
+/* border-image-repeat:round; */
+/* stretch default value */
+/* border-image-repeat:stretch; */
+
+/* .element{
+    margin: 20px;
+    border-image-source: url(images/BOW_TIE.jpg);
+    border-image-width: 10px;
+    border-image-slice: 30;
+
+    border-image-repeat: repeat;
+    border-image-outset: 20px;
+} */

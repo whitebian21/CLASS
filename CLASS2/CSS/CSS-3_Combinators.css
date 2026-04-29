@@ -1,4 +1,4 @@
-/* CSS-3_Combinators_sellectors.css */
+/* CSS-3_Combinators_selectors.css */
 /* h1 {
     background-color: brown;
 }  */
@@ -47,15 +47,16 @@ o Selects all elements that are descendants of a specified element.
 Id overrules combinators. 
 */
 
+/* 
 p{
     background-color: rgb(18, 182, 223);
     color: blue;
-}
-
+} */
+/* 
 .father>p{
     background-color:rgb(18, 182, 223);
     color: blue; ;
-}
+} */
 
 /* .father>.sons{
     background-color:rgb(223, 18, 151) ;
@@ -67,9 +68,9 @@ p{
     color: blue
 }
 
-/* #son{
+#son{
     color: green;
-} */
+}
 
 /* .son{
     color: green;
@@ -155,9 +156,10 @@ General sibling combinator (~):
     background-color: red;
 } */
 
+/* 
 .father~*{
     background-color: rgb(95, 42, 165);
-}
+} */
 
 
 /* ATTRIBUTE SELLECTOR */
@@ -175,7 +177,7 @@ General sibling combinator (~):
 }  */
 
 
-/* PSEUDO CLASS SELLECTORS */
+/* PSEUDO CLASS SELECTORS */
 /* :hover{
     background-color: brown;
 } */
@@ -186,18 +188,18 @@ General sibling combinator (~):
 } */
 
 
-.father>div:active{
+/* .father>div:active{
     background-color: rgb(42, 165, 58);
-}
+} */
 
 
-.father~div:nth-child(even){
+/* .father~div:nth-child(even){
     background-color: blue;
-} 
+}  */
 
-.father~div:nth-child(odd){
+/* .father~div:nth-child(odd){
     background-color: green;
-}
+} */
 
 /* .father div h1, .father div h2{
     background-color: blue;
@@ -219,7 +221,7 @@ General sibling combinator (~):
 
 
 
-
+/* PERSONAL NOTES */
 
 /* Combinators define the relationship between different selectors */
 /* Combinators are more powerful than Id */
@@ -243,26 +245,26 @@ General sibling combinator (~):
 
 
  /* Child Combinator (>) */
- div > div {
+ /* div > div {
     color: darkblue;
- }
+ } */
 
  /*Adjacent Sibling Combinator (+)*/
  /* Selects the very next element after another element */
 
-.father + .sons{
+/* .father + .sons{
     color: violet;
-}
+} */
 
 /* General Sibling Combinator (~) */
 /* Selects all siblings after an element. */
 
-.father ~ div {
+/* .father ~ div {
     background-color: violet;
-}
+} */
 /* Combining Combinators (Very Important) */
 /* You can mix them together to be more specific */
  
-div > div h1 {
+/* div > div h1 {
   color: orange;
-}
+} */
