@@ -1,0 +1,218 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* ##################################################################### */
+/* LIST */
+/* ##################################################################### */
+
+ol{
+  padding: 25px;
+  background-color: green;
+  /* margin-top: 20px; */
+  margin-bottom: 20px;
+  /* list-style-type:georgian; */
+  /* list-style-type: lower-alpha; */
+  /* list-style-type: upper-alpha; */
+  /* list-style-type: decimal; */
+  /* list-style-type: decimal-leading-zero; */
+  /* list-style-type: lower-roman; */
+  /* list-style-type: upper-roman; */
+  /* list-style-type: lower-greek; */
+  list-style-type: armenian;
+
+}
+
+/* li {
+    color: red;
+} */
+
+ ol li {
+    color: red;
+}
+
+ul {
+  padding: 25px;
+  background-color: coral;
+  /* list-style-type:disc; */
+  /* list-style-type:circle; */
+  /* list-style-type:square; */
+  
+
+  /* list-style-position:inside; */
+  list-style-position:outside;
+
+  /* list-style-image: url('./imgs/car7.jpeg');  */
+  /* list-style-image: url('./imgs/small_Img2.png');  */
+
+  /* width: 300px;
+    height: 20px; */
+  /* background-color: blue; */
+
+}
+
+/* For Image bullet points, you use other tools to resize your image to size the bullet points 
+before putting it in CSS */
+
+ul > *:nth-child(even) {
+  background-color: aqua;
+}
+
+ul > *:nth-child(odd) {
+  background-color: rgb(48, 21, 146);
+}
+
+ul > *:hover {
+  background-color: chartreuse;
+  color: #db1a1a;
+}
+/* #################################################### */
+/* TABLES */
+/* #################################################### */
+table {
+  background-color: rgb(144, 144, 242);
+
+  /* width: 90%; */
+  width: 100%;
+  /* margin: 20px; */
+  /* margin: auto; */
+}
+
+tr:nth-child(even) {
+  background-color: aqua;
+}
+
+tr:nth-child(odd) {
+  background-color: rgb(48, 21, 146);
+}
+
+tr:hover {
+  background-color: rgb(22, 198, 95);
+}
+
+td:hover {
+  background-color: rgb(111, 21, 115);
+}
+
+/* table{ */
+
+table,
+td,
+th {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+td,
+th {
+  padding: 10px;
+  text-align: center;
+}
+
+td {
+  height: 100px;
+  /* vertical-align:middle; */
+  /* vertical-align:top; */
+  vertical-align: bottom;
+}
+
+/* #################################################### */
+/* TABLES WITH DIVS */
+/* #################################################### */
+
+.table-container {
+  background-color: rgb(22, 198, 95);
+  border: 1px solid black;
+
+  /* Create a table-like structure */
+  display: table;
+  /* Optional: Set the width of the "table" */
+  width: 100%;
+}
+
+.table-row {
+  /* Create a table row */
+  display: table-row;
+}
+
+.table-cell {
+  /* Create a table cell */
+  display: table-cell;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.table-row:nth-child(odd) {
+  background-color: rgb(167, 215, 98);
+}
+.table-row:nth-child(even) {
+  background-color: rgb(51, 186, 227);
+}
+
+.table-row:hover {
+  background-color: rgb(216, 91, 223);
+}
+
+.table-cell:hover {
+  background-color: rgb(111, 21, 115);
+}
+
+/* #################################################### */
+/* RESPONSIVE TABLES WITH DIVS */
+/* #################################################### */
+
+.table-container2 {
+  background-color: rgb(22, 198, 95);
+  border: 1px solid black;
+  max-width: 800px;
+
+  /* Create a table-like structure */
+  display: table;
+  /* Optional: Set the width of the "table" */
+  width: 100%;
+  display: flex;
+}
+
+.tableMain {
+  width: 200px;
+}
+.tableData {
+  width: 80%;
+  overflow-x: scroll;
+}
+
+.tableDataRow {
+  overflow-x: scroll;
+  display: flex;
+}
+.tableDataCell {
+  width: 200px;
+  background-color: #ee0f0f;
+  margin: 4px;
+  min-height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tableMainCell {
+  width: 200px;
+  background-color: #291e75;
+  margin: 4px;
+  min-height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tableDataContainer {
+  min-width: 600px;
+  /* width: auto; */
+}
+
+.tableProperty-cell {
+  overflow-x: scroll;
+}
+
+/* COLGROUP */

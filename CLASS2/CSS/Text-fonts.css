@@ -1,0 +1,94 @@
+/* .body{
+   font-weight: bolder;
+} */
+
+.example{
+    /* Indent the first line by 20 pixels */
+    text-indent: 20px;
+
+
+/* Description: Controls the capitalization of text. */
+    /* text-transform: normal; */
+    /* text-transform: capitalize; */
+    /* text-transform: uppercase; */
+    /* text-transform: lowercase; */
+
+/* Description: Determines how white space inside an element is handled. */
+    /* white-space: normal; */
+    /* white-space: nowrap; */
+    /* white-space: pre; */
+    /* white-space: pre-line; */
+    /* white-space: wrap; */
+/* 
+    letter-spacing: normal; */
+    /* letter-spacing: 2px; */
+    /* letter-spacing: -2px; */
+
+
+    /* word-spacing: normal; */
+    /* word-spacing: 90px; */
+    /* word-spacing: -2px; */
+
+    /* line-height: normal; */
+    /* line-height: 26px; */
+    /* line-height: 0px; */
+
+    /* text-align: justify; */
+    /* text-align:left ; */
+    /* text-align: right; */
+    /* text-align: center; */
+    /* text-align: start; */
+    /* text-align: end */
+    /* text-align: inherit; */
+    /* text-align: initial; */
+    /* text-align: unset; */
+    /* unset- Acts like inherit or initial depending on context */
+
+}
+/* fonts vs text (simple idea)
+o   Font: how the letters themselves are designed.
+o  Text: how the letters are arranged, spaced and displayed
+*/
+
+.example{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+    /* font-size: normal; */
+    /* font-size: large; */
+    font-size: 25px;
+
+    /* font-style: normal; */
+    /* font-style: italic; */
+    /* font-style: oblique; */
+
+    /* font-variant: normal; */
+    /* font-variant: small-caps; */
+
+
+    /* font-weight: normal; */
+    /* font-weight: bold; */
+    /* font-weight: bolder; */
+    /* font-weight: lighter */
+    /* font-weight: 100; */
+    /* font-weight: 900; */
+
+    /*font-weight numeric values (100 to 900)  */
+}
+/* .example::first-letter{
+      color:blue;
+      font-size: xx-large;
+} */
+
+/* .example::first-line{
+    color: red;
+} */
+
+/* .example2{
+    text-indent: 20px;
+    color: red;
+    text-transform: normal;
+
+    letter-spacing: normal;
+
+    word-spacing: normal;
+} */

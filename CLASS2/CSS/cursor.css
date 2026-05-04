@@ -1,0 +1,23 @@
+.dim{
+    height: 200px;
+    color: red;
+    padding: 10px;
+    margin: 30px;
+}
+/* Values:
+• auto (default): Browser decides the cursor.
+• pointer: Indicates a link.
+• default: Default cursor (usually an arrow).
+• text: Indicates text.
+• crosshair: Crosshair cursor.
+• move: Indicates that something can be moved.
+• progress: Indicates that something is processing.
+• not-allowed: Indicates that something is not allowed.
+• grab: grab hand
+*/
+
+.element{
+    border: 2px solid black;
+    /* cursor:progress; */
+    cursor: not-allowed;
+}
